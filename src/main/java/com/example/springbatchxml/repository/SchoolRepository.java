@@ -20,7 +20,7 @@ public interface SchoolRepository extends JpaRepository<School, Long> {
     @Transactional
     long deleteAllByName(String name);
 
-    @
+
     @Transactional
     boolean existsByName(String name);
     Stream<School> readAlLBySchoolTypeNotNull();
